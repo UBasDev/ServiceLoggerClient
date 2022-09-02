@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";    
+}
+
+<div class="grid grid-cols-1 gap-0 gap-y-1">
+    <div class="flex items-center justify-around my-1">
+        <div>
+            <i class="fa-solid fa-heart text-green-500"></i> : Çalışıyor
+        </div>
+        <div>
+            <i class="fa-solid fa-circle text-yellow-500"></i> : Hesaplanıyor
+        </div>
+        <div>
+            <i class="fa-solid fa-exclamation text-red-500"></i> : Arızalı
+        </div>
+    </div>
+    <div class="my-1">
+        <a asp-controller="Home" asp-action="Index" asp-route-pokemon=true>Pokemon Service</a>
+    </div>
+</div>
